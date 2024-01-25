@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    android:layout_gravity="center">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/textViewLogin"
+            android:layout_marginTop="10dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/editTextUsername"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:padding="10dp"
+                android:layout_toLeftOf="@+id/imageViewShowPassword"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:id="@+id/imageViewShowPassword"
+                android:layout_width="30dp"
+                android:layout_height="48dp"
+                android:layout_alignBottom="@id/editTextPassword"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/password"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onRegisterClick"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_below="@id/textViewRegister"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:onClick="onLogInButtonClick"
+             />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

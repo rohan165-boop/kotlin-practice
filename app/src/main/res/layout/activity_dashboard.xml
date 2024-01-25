@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashBoardActivity"
+    android:layout_gravity="center">
+
+    <!-- res/layout/dashboardActivity.xml -->
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridLayoutDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        >
+
+        <!-- Container 1 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 1"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+
+
+        </RelativeLayout>
+
+        <!-- Container 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 2"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+
+
+        </RelativeLayout>
+
+        <!-- Container 3 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 3"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <!-- Container 4 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 4"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+
+
+        </RelativeLayout>
+
+        <!-- Container 5 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 5"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+
+
+        </RelativeLayout>
+
+        <!-- Container 6 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@android:color/black">
+
+            <!-- Centered TextView for Item 1 -->
+            <TextView
+                android:id="@+id/dashItem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 6"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true" />
+
+
+
+        </RelativeLayout>
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
